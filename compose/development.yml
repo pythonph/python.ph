@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+    app:
+      extends:
+        file: base.yml
+        service: app
+      container_name: development_app
+      ports:
+        - "8080:8000"
+        - "2323:22"

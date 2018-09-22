@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+    app:
+        restart: always
+        build:
+            context: ../
+        image: application
+        volumes:
+            - ../:/srv/src/app
+        container_name: application
+        working_dir: "/srv/src/app"
+        command: scripts/docker_startup.sh
