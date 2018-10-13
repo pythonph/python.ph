@@ -1,1 +1,4 @@
 Django==2.0
+
+django-js-reverse
+django-webpack-loader
